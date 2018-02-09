@@ -11,8 +11,4 @@ myApp.controller('globalController', ['$scope', '$sce', function($scope, $sce){
             $scope.formSubmitted = true;
         }
     }
-
-    $scope.trustSrc = function(src) {
-        return $sce.trustAsResourceUrl(src);
-    }
 }]);
